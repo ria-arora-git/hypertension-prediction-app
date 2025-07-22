@@ -59,6 +59,6 @@ features = np.array([[age, bmi, salt, stress, sleep,
 if st.button("Predict"):
     result = model.predict(features)[0]
     if result == 1:
-        st.error("⚠️ Hypertension is present. Please consult a medical professional.")
+        st.error("⚠️ Hypertension might be present. Please consult a medical professional.")
     else:
         st.success("✅ No Hypertension detected.")
